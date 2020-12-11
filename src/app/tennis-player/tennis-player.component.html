@@ -1,0 +1,7 @@
+<label>
+  <input type="text" placeholder="Nom du joueur" [(ngModel)]="player.playerName">
+  <input type="text" placeholder="Prénom du joueur" [(ngModel)]="player.playerSurname">
+  <input (click)="player.playerName" type="button" value="Change le nom">
+</label>
+<p>Joueur : {{ player.playerName }} - {{ player.playerSurname }}</p>
+<p>Classement : {{ player.playerCls }}</p>
